@@ -5,6 +5,7 @@
  */
 package htl.m.templd_uebung;
 
+import htl.m.templd_uebung.model.Person;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -42,8 +43,20 @@ public class PrimaryController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+        
+        Person p = new Person(1, "Jane", "Doe", null, 50, 50, 180, 100.00, 30, 20);
+        initializeLabelsWithPersons(p);
+    }   
+    
+    private void initializeLabelsWithPersons(Person p){
+        lbl_id.setText(p.getId());
+        lbl_vname.setText(p.getVn());
+        lbl_nname.setText(p.getNn());
+        lbl_groesse.setText(p.getGroesse());
+        lbl_gewicht.setText(p.getGewicht());
+        lbl_bmi.setText(p.getBmi());
+        lbl_ffmi.setText(p.getFfmi());
+    }
 
     @FXML
     private void DragDrop(DragEvent event) {
