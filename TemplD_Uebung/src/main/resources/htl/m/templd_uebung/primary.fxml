@@ -10,71 +10,71 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="1121.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="htl.m.templd_uebung.PrimaryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="htl.m.templd_uebung.PrimaryController">
    <children>
-      <ImageView fx:id="drag_drop" fitHeight="218.0" fitWidth="284.0" layoutX="14.0" layoutY="14.0" onDragDropped="#DragDrop">
+      <ImageView fx:id="drag_drop" fitHeight="128.0" fitWidth="177.0" layoutX="14.0" layoutY="14.0" onDragDropped="#DragDrop">
          <image>
             <Image url="@../../../../../../target/classes/animation2.gif" />
          </image>
       </ImageView>
-      <ListView layoutX="14.0" layoutY="252.0" prefHeight="288.0" prefWidth="383.0" />
-      <Label layoutX="453.0" layoutY="19.0" prefHeight="21.0" prefWidth="23.0" text="ID">
+      <ListView layoutX="14.0" layoutY="157.0" prefHeight="168.0" prefWidth="300.0" />
+      <Label layoutX="414.0" layoutY="14.0" prefHeight="21.0" prefWidth="23.0" text="ID">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label layoutX="454.0" layoutY="45.0" prefHeight="21.0" prefWidth="69.0" text="Vorname">
+      <Label layoutX="415.0" layoutY="40.0" prefHeight="21.0" prefWidth="69.0" text="Vorname">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label layoutX="453.0" layoutY="77.0" text="Nachname">
+      <Label layoutX="414.0" layoutY="72.0" text="Nachname">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label layoutX="452.0" layoutY="108.0" text="Größe (cm)">
+      <Label layoutX="413.0" layoutY="103.0" text="Größe (cm)">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label layoutX="452.0" layoutY="142.0" text="Gewicht (kg)">
+      <Label layoutX="413.0" layoutY="137.0" text="Gewicht (kg)">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label layoutX="451.0" layoutY="172.0" prefHeight="21.0" prefWidth="50.0" text="BMI">
+      <Label layoutX="412.0" layoutY="167.0" prefHeight="21.0" prefWidth="50.0" text="BMI">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label layoutX="451.0" layoutY="206.0" prefHeight="21.0" prefWidth="50.0" text="FFMI">
+      <Label layoutX="412.0" layoutY="201.0" prefHeight="21.0" prefWidth="50.0" text="FFMI">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label fx:id="lbl_vname" layoutX="642.0" layoutY="45.0">
+      <Label fx:id="lbl_vname" layoutX="603.0" layoutY="40.0">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label fx:id="lbl_id" layoutX="642.0" layoutY="19.0">
+      <Label fx:id="lbl_id" layoutX="603.0" layoutY="14.0">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label fx:id="lbl_nname" layoutX="642.0" layoutY="77.0">
+      <Label fx:id="lbl_nname" layoutX="603.0" layoutY="72.0">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label fx:id="lbl_groesse" layoutX="642.0" layoutY="108.0">
+      <Label fx:id="lbl_groesse" layoutX="603.0" layoutY="103.0">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label fx:id="lbl_gewicht" layoutX="642.0" layoutY="142.0">
+      <Label fx:id="lbl_gewicht" layoutX="603.0" layoutY="137.0">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label fx:id="lbl_bmi" layoutX="642.0" layoutY="172.0">
+      <Label fx:id="lbl_bmi" layoutX="603.0" layoutY="167.0">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <Label fx:id="lbl_ffmi" layoutX="642.0" layoutY="206.0">
+      <Label fx:id="lbl_ffmi" layoutX="603.0" layoutY="201.0">
          <font>
             <Font size="10.0" />
          </font></Label>
-      <BarChart layoutX="435.0" layoutY="262.0" prefHeight="121.0" prefWidth="485.0">
+      <BarChart layoutX="388.0" layoutY="240.0" prefHeight="150.0" prefWidth="347.0">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
@@ -82,7 +82,7 @@
           <NumberAxis side="LEFT" />
         </yAxis>
       </BarChart>
-      <BarChart layoutX="435.0" layoutY="421.0" prefHeight="150.0" prefWidth="340.0">
+      <BarChart layoutY="346.0" prefHeight="150.0" prefWidth="340.0">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
@@ -90,7 +90,7 @@
           <NumberAxis side="LEFT" />
         </yAxis>
       </BarChart>
-      <BarChart layoutX="775.0" layoutY="421.0" prefHeight="99.0" prefWidth="340.0">
+      <BarChart layoutX="340.0" layoutY="396.0" prefHeight="99.0" prefWidth="340.0">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
@@ -98,17 +98,17 @@
           <NumberAxis side="LEFT" />
         </yAxis>
       </BarChart>
-      <Label layoutX="580.0" layoutY="396.0" text="Gewicht" underline="true">
+      <Label layoutX="139.0" layoutY="336.0" text="Gewicht" underline="true">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="926.0" layoutY="396.0" text="Größe" underline="true">
+      <Label layoutX="491.0" layoutY="386.0" text="Größe" underline="true">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="633.0" layoutY="242.0" text="BMI und FFMI" underline="true">
+      <Label layoutX="529.0" layoutY="231.0" text="BMI und FFMI" underline="true">
          <font>
             <Font size="14.0" />
          </font>
