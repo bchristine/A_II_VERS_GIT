@@ -5,7 +5,14 @@
  */
 package htl.m.templd_uebung;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import htl.m.templd_uebung.model.Person;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -62,4 +69,28 @@ public class PrimaryController implements Initializable {
     private void DragDrop(DragEvent event) {
     }
     
+    public void auslesen(File f) throws FileNotFoundException, IOException{
+        
+        FileReader fr = new FileReader(f);
+        BufferedReader br = new BufferedReader(fr);
+        
+        String json = "";
+        String temp = "a";
+        
+        while(temp!=null || temp != ""){
+            
+            temp = br.readLine();
+            
+            if(temp != null || temp !=" ")
+            {
+                json += temp;
+            }
+            
+        }
+        
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        Gson gson = gsonBuilder.create();
+        Person person = gson.fromJson(json, Person.class);
+        
+    } 
 }
