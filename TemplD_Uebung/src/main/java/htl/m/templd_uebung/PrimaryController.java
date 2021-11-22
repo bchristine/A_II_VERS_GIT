@@ -49,13 +49,13 @@ public class PrimaryController implements Initializable {
     }   
     
     private void initializeLabelsWithPersons(Person p){
-        lbl_id.setText(p.getId());
+        lbl_id.setText(""+p.getId());
         lbl_vname.setText(p.getVn());
         lbl_nname.setText(p.getNn());
-        lbl_groesse.setText(p.getGroesse());
-        lbl_gewicht.setText(p.getGewicht());
-        lbl_bmi.setText(p.getBmi());
-        lbl_ffmi.setText(p.getFfmi());
+        lbl_groesse.setText(""+p.getGroesse());
+        lbl_gewicht.setText(""+p.getGewicht());
+        lbl_bmi.setText(""+p.getBmi());
+        lbl_ffmi.setText(""+p.getFfmi());
     }
 
     @FXML
